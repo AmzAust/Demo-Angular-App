@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-gotcharacter',
@@ -12,6 +12,9 @@ export class GOTCharacterComponent implements OnInit {
   i = 0;
   stopSwitch;
   stopSwitchStatus = true;
+  twoWayData = 'Tyrion';
+
+  @Input() imageUrlChild;
 
   stopSwitchFirstAndLast() {
     clearInterval(this.stopSwitch);
@@ -37,6 +40,7 @@ export class GOTCharacterComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    console.log(this.imageUrlChild);
   }
 
 }
