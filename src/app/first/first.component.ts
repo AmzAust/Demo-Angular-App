@@ -7,4 +7,14 @@ import {Component} from '@angular/core';
 })
 
 export class FirstComponent {
+    headingTwo = 'I am a component';
+    imageUrl = '../../assets/programmer.png';
+
+    changeValue() {
+        this.headingTwo = 'This value has been changed';
+    }
+
+    returnString() {
+        return 'Inter';
+    }
 }

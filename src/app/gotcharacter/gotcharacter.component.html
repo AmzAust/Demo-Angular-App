@@ -1,0 +1,8 @@
+<ul class="list-group">
+    <li class="list-group-item">{{GOTCharacter[0]}}</li>
+    <li class="list-group-item">{{GOTCharacter[1]}}</li>
+    <li class="list-group-item">{{GOTCharacter[2]}}</li>
+    <li class="list-group-item">{{GOTCharacter[3]}}</li>
+</ul>
+<button type = "button" class="btn btn-primary" name = "button" (click)="switchFirstAndLastName()">switch names</button>
+<button type = "button" class="btn btn-danger" [disabled] = "stopSwitchStatus" name = "button" (click)="stopSwitchFirstAndLast()">stop</button>
