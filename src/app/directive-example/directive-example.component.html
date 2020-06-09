@@ -1,0 +1,21 @@
+<br>
+<button type = "button" (click) = "toggleHero()" name = "button">toggle heroes</button>
+<div *ngIf="toggleHeroFlag">
+    <div *ngFor="let hero of dcHeroes; let i = index" (click) = "selectHero(hero)" appAppBold bgColor = 'blue'>
+        {{i + 1}}){{hero}}
+    </div>
+</div>
+<div [ngSwitch]="selectedHero" [ngStyle]="myStyle">
+    <div *ngSwitchCase="dcHeroes[0]">Bruce Wayne</div>
+    <div *ngSwitchCase="dcHeroes[1]">Clarke Kent</div>
+    <div *ngSwitchCase="dcHeroes[2]">Princess Diana</div>
+    <div *ngSwitchCase="dcHeroes[3]">Barry Allen</div>
+    <div *ngSwitchDefault>No heroes selected.</div>
+</div>
+<button type = "button" (click) = "setStyle()" name = "button">change style</button>
+
+<h2 [ngClass]="currentCSSClass">Change CSS Class Dynamically</h2>
+<button type = "button" (click) = "setCSSClass()" name = "button">change css class</button>
+
+<h2 [style.color]="inputColor">Change text color using NgModel</h2>
+<input type = "text" [(ngModel)]="inputColor" name="" value="">

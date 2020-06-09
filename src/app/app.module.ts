@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import { GOTCharacterComponent } from './gotcharacter/gotcharacter.component';
+import { DirectiveExampleComponent } from './directive-example/directive-example.component';
+import { AppBoldDirective } from './app-bold.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
-    GOTCharacterComponent
+    GOTCharacterComponent,
+    DirectiveExampleComponent,
+    AppBoldDirective
   ],
   imports: [
     BrowserModule,

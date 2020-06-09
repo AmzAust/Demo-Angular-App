@@ -23,7 +23,7 @@ export class GOTCharacterComponent implements OnInit {
 
   switchFirstAndLastName() {
     this.stopSwitch = setInterval(() => {
-      if(this.i % 2 === 0) {
+      if (this.i % 2 === 0) {
         this.GOTCharacter = this.GOTCharacterFirstName;
         console.log('if');
       } else {
